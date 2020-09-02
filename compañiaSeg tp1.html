@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id= "pestaña">Seguros</title>
+    <link rel="stylesheet" type="text/css" href="tp1.css"> 
+</head>
+
+<body>
+    <h1>Compañía de Seguros</h1>
+   
+    <form class="formulario">
+        <h2>Dejanos tus datos!</h2>
+        <div>
+            <label>Nombre</label>
+            <input name="nombre" id="nombre"/>
+        </div>
+        <div>
+            <label>Apellido</label>
+            <input name="apellido" id="apellido"/> 
+        </div>
+        <div>
+            <label>DNI</label>
+            <input name="dni" id="dni"/> 
+        </div>
+        <div>
+            <label>Email</label>
+            <input name="email" id="email"/> 
+        </div>
+        <div>
+            <label>Telefono</label>
+            <input name="telefono" id="telefono"/> 
+        </div>
+        <div>
+            <label>Tipo de seguro</label>
+            <select name="tipoSeguro" id="tipoSeguro">
+                <option value="500" >Básico</option>
+                <option value= "1000">Intermedio</option>
+                <option value= "1500">Premium</option>
+            </select>
+         </div>
+
+         <div>
+            <button type="button" onclick="getData()">Enviar</button>
+          </div>
+        
+    </form>
+
+    <div id="precio"> 
+    </div> 
+
+    <script src="tp1.js"> </script>
+
+
+
+</body>
+</html>
